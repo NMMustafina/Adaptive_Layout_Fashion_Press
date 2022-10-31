@@ -1,0 +1,31 @@
+.textcols {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 21px;
+  padding-top: 10px;
+
+  &__item-1 {
+    width: 60%;
+    color: #3e3f3f;
+    padding-right: 10px;
+
+    @include sm {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__item-2 {
+    width: 40%;
+    color: #747474;
+
+    @include sm {
+      width: 100%;
+    }
+  }
+
+  &__content {
+    display: block;
+  }
+}

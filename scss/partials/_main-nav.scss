@@ -1,0 +1,37 @@
+.main-nav {
+  background: #000000;
+  border-top: 1px solid #89883e;
+
+  &__list {
+    grid-column: 2/9;
+    align-self: center;
+    list-style: none;
+    margin: 0;
+    padding: 0 15px;
+
+    @include lg {
+      padding: 10px 15px;
+      text-align: center;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    margin-right: 48px;
+
+    @include lg {
+      margin-right: 5%;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    color: $inverse-text-color;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

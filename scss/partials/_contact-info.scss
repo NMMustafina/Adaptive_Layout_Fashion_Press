@@ -1,0 +1,31 @@
+.contact-info {
+  position: relative;
+  padding: 0 10px;
+  grid-column: 6/9;
+
+  @include md {
+    grid-column: 1/10;
+    margin: 10px;
+  }
+
+  @include sm {
+    justify-self: center;
+    text-align: center;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background: linear-gradient(to right, #e1e0df, #edeeef);
+    width: 3px;
+    height: calc(100% - 100px);
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+
+    @include md {
+      display: none;
+    }
+  }
+}

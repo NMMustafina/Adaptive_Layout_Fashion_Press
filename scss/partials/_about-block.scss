@@ -1,0 +1,45 @@
+.about-block {
+  position: relative;
+  grid-column: 2/4;
+
+  @include lg {
+    padding-left: 10px;
+  }
+
+  @include md {
+    grid-column: 2/5;
+  }
+
+  @include sm {
+    grid-column: 1/10;
+    justify-self: center;
+    text-align: center;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background: linear-gradient(to right, #e1e0df, #edeeef);
+    width: 3px;
+    height: calc(100% - 100px);
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 0;
+
+    @include md {
+      height: calc(100% - 50px);
+    }
+
+    @include sm {
+      display: none;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 16px;
+    color: #3e3f3f;
+    padding: 15px 40px 0 0;
+  }
+}

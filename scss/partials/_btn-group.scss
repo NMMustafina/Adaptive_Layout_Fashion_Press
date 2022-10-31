@@ -1,0 +1,25 @@
+.btn-group {
+  grid-column: 7/9;
+  justify-self: self-end;
+
+  @include sm {
+    justify-self: center;
+    align-self: center;
+  }
+
+  &__btn {
+    border: none;
+    width: 32px;
+    height: 29px;
+    margin-right: 5px;
+    cursor: pointer;
+
+    &--bars {
+      background: url(../images/ic-bars.svg) 50% 50% no-repeat;
+    }
+
+    &--list {
+      background: url(../images/ic-list.svg) 50% 50% no-repeat;
+    }
+  }
+}

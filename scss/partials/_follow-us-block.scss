@@ -1,0 +1,13 @@
+.follow-us-block {
+  grid-column: 4/6;
+  justify-self: center;
+
+  @include md {
+    grid-column: 5/9;
+  }
+
+  @include sm {
+    grid-column: 1/10;
+    margin: 10px;
+  }
+}

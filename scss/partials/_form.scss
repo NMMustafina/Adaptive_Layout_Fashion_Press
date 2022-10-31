@@ -1,0 +1,45 @@
+.form {
+  grid-column: 2/7;
+
+  @include sm {
+    justify-self: center;
+    align-self: center;
+  }
+
+  &__col {
+    display: inline-block;
+    position: relative;
+  }
+
+  &__label {
+    color: $baseColorRed;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-right: 10px;
+  }
+
+  &__field {
+    font-size: 14px;
+    padding: 5px 35px 5px 5px;
+    width: 275px;
+    height: 29px;
+    border: none;
+    outline: none;
+    background: #c9c9c9;
+
+    @include sm {
+      width: 100%;
+    }
+  }
+
+  &__search-button {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 32px;
+    height: 29px;
+    background: $baseColorRed url(../images/ic-search.svg) 50% no-repeat;
+    border: none;
+    cursor: pointer;
+  }
+}

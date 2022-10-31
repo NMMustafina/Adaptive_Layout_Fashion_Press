@@ -1,0 +1,90 @@
+%base-text {
+  font-family: $openSans;
+  color: $inverse-text-color;
+  font-weight: 300;
+}
+
+.promo-block {
+
+  &__inner {
+    grid-column: 2/9;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__col-text,
+  &__col-img {
+    width: 50%;
+
+    @include md {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  &__col-img {
+    position: relative;
+  }
+
+  &__text {
+    @extend %base-text;
+    font-size: 52px;
+    line-height: 56px;
+    padding: 43px 10px;
+
+    @include md {
+      font-size: 42px;
+      line-height: 46px;
+      margin: 0;
+      padding: 15px;
+      text-align: center;
+    }
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin: 18px;
+
+    @include lg {
+      max-width: 95%;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @extend %base-text;
+    width: 184px;
+    height: 182px;
+    right: 0;
+    bottom: 30px;
+    font-size: 32px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 50%;
+    background: url(../images/promo-block-label.jpg);
+
+    &--sm-text {
+      display: block;
+      font-size: 20px;
+
+      @include md {
+        font-size: 16px;
+      }
+    }
+
+    @include md {
+      width: 144px;
+      height: 142px;
+      font-size: 22px;
+      right: 100px;
+    }
+  }
+}

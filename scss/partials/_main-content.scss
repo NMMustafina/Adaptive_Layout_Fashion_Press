@@ -1,0 +1,13 @@
+.main-content {
+  grid-column: 4/9;
+  padding: 0 4px 0 8px;
+
+  @include xsm {
+    grid-column: 1/10;
+    justify-self: center;
+  }
+
+  &__card {
+    height: 100%;
+  }
+}

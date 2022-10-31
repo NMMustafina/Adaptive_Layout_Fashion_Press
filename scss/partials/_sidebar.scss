@@ -1,0 +1,12 @@
+.sidebar {
+  grid-column: 2/4;
+  border-right: 1px solid #c1c1c1;
+  margin-right: 15px;
+
+  @include xsm {
+    grid-column: 1/10;
+    justify-self: center;
+    border-right: none;
+    margin-right: 0;
+  }
+}
